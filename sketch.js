@@ -88,7 +88,7 @@ function mouseReleased() {
 }
 
 function keyPressed(){
-  if (keyCode === 32) {
-      slingshot.reload(bird.body);
-  }
-}
+   if (keyCode === 32) { 
+     sling.reload(object);
+     } 
+    }

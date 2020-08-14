@@ -3,8 +3,8 @@ class Slingshot{
         var options = {
             bodyA: bodyA,
             pointB: pointB,
-            stiffness: 0.1,
-            length: 10
+            stiffness: 0.04,
+            length: 1
         }
         this.sling = Constraint.create(options);
         World.add(world, this.sling);
@@ -26,7 +26,7 @@ class Slingshot{
         this.sling.bodyA = null;
     } 
 
-    reload(object) {
+    reload(obj) {
         this.sling.bodyA = object;
     }
     
